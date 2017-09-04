@@ -72,9 +72,9 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
      if(top < 360){
-
+       moveRock();
      } else{
-
+        dodger.remove(rock);
      }
     /**
      * But if the rock *has* reached the bottom of the GAME,
