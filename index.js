@@ -38,7 +38,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = x;
+  var top = 0;
 
   rock.style.top = top
 
@@ -68,7 +68,7 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
      if(top < 360){
-       moveRock();
+       rock.style.top = top+2;
      } else{
         GAME.removeChild(rock);
      }
