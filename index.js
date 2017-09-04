@@ -95,10 +95,10 @@ function createRock(x) {
  */
 function endGame() {
   for(let i =0;i<ROCKS.length;i++){
-    GAME.removeChild(ROCKS[i]);
+    (ROCKS[i]).remove;
   }
   window.removeEventListener('keydown', moveDodger);
-  gameInterval = null;
+  window.clearInterval(gameInterval);
   alert('YOU LOSE!');
 }
 
