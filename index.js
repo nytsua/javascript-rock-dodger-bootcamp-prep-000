@@ -70,7 +70,7 @@ function createRock(x) {
      if(top < 360){
        moveRock();
      } else{
-        GAME.remove(rock);
+        GAME.removeChild(rock);
      }
     /**
      * But if the rock *has* reached the bottom of the GAME,
