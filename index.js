@@ -38,7 +38,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = Math.random()*100;
+  var top = x;
 
   rock.style.top = top
 
@@ -47,7 +47,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
    GAME.appendChild(rock);
-   moveRock();
+   moveRock(x-2);
 
   /**
    * This function moves the rock. (2 pixels at a time
