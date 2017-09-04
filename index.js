@@ -70,8 +70,9 @@ function createRock(x) {
      rock.style.top = `${top}px`;
      if(top > 360){
         rock.remove();
+     } else{
+       window.requestAnimationFrame(moveRock());
      }
-     window.requestAnimationFrame(moveRock());
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
