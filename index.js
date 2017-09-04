@@ -67,7 +67,7 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
      top = top + 2;
-      rock.style.top = `${top}px`;
+     rock.style.top = `${top}px`;
      if(top > 380){
         rock.remove();
      }
@@ -79,7 +79,7 @@ function createRock(x) {
   }
 
   // We should kick of the animation of the rock around here
-
+  window.requestAnimationFrame(moveRocke());
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
