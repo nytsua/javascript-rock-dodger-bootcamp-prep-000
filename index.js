@@ -97,7 +97,7 @@ function createRock(x) {
 function endGame() {
   gameInterval = null;
   for(let i =0;i<ROCKS.length;i++){
-    GAME.remove(ROCKS[i]);
+    GAME.removeChild(ROCKS[i]);
   }
   window.removeEventListener('keydown', moveDodger);
 }
