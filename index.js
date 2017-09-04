@@ -68,7 +68,7 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
      if(top < 360){
-       rock.style.top = top+2;
+       rock.style.top = `${top+2}px`;
      } else{
         GAME.removeChild(rock);
      }
