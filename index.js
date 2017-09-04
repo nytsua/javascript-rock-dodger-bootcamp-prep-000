@@ -132,7 +132,9 @@ function moveDodgerLeft() {
    */
    function move(){
      var position = positionToInteger(dodger.style.left);
-     DODGER.style.left = `${position - 4}px`;
+     if(position > 0){
+       DODGER.style.left = `${position - 4}px`;
+     }
    }
    window.requestAnimationFrame(move);
 }
